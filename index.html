@@ -478,6 +478,15 @@ h1{
     grid-template-columns:1fr;
   }
 }
+  .flag{
+    width:28px;
+    height:28px;
+    object-fit:contain;
+    vertical-align:middle;
+    margin:0 6px;
+    border-radius:0;
+    box-shadow:none;
+}
 </style>
 </head>
 
@@ -639,15 +648,16 @@ h1{
 
     <!-- JOGO MAIS NOVO EM CIMA -->
 
-    <div>
-      <button <button class="game-toggle" onclick="toggleGame(this)">
+<div>
+  <button class="game-toggle" onclick="toggleGame(this)">
     <div class="game-title">
-  <img class="flag" src="bandeiras/bra.png.png">
-  Brasil x Haiti
-  <img class="flag" src="bandeiras/hai.png.png" alt="Haiti">
+      <img class="flag" src="bandeiras/bra.png.png" alt="Brasil">
+      <span>Brasil x Haiti</span>
+      <img class="flag" src="bandeiras/hai.png.png" alt="Haiti">
     </div>
-</button></button>
-      <div class="game-content">
+  </button>
+
+  <div class="game-content">
         <button class="btn proof-btn" onclick="abrirComprovante('comprovantes/nao-houve-ganhador.png')"><img class="proof-logo" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"> YouTube / Ver comprovante</button>
         <button class="btn proof-btn" onclick="abrirComprovante('comprovantes/nao-houve-ganhador.png')"><img class="proof-logo" src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png"> TikTok / Ver comprovante</button>
         <button class="btn proof-btn" onclick="abrirComprovante('comprovantes/nao-houve-ganhador.png')"><img class="proof-logo" src="https://cdn-icons-png.flaticon.com/512/15707/15707749.png"> Instagram / Ver comprovante</button>
