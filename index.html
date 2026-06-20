@@ -415,6 +415,69 @@ h1{
     gap: 18px;
     margin-top: 20px;
 }
+  /* ===== BLOCO COPA DO MUNDO ===== */
+
+.copa-card{
+  margin-top:24px;
+}
+
+.game-list{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:14px;
+}
+
+.game-toggle{
+  width:100%;
+  border:none;
+  cursor:pointer;
+  background:var(--panel);
+  border:1px solid rgba(255,255,255,.8);
+  border-radius:24px;
+  padding:18px;
+  font-size:20px;
+  font-weight:900;
+  color:#1F2937;
+  box-shadow:0 10px 22px rgba(31,41,55,.10);
+}
+
+.game-toggle:hover{
+  transform:translateY(-2px);
+}
+
+.game-content{
+  display:none;
+  background:var(--panel-2);
+  border-radius:24px;
+  padding:16px;
+  margin-top:10px;
+  box-shadow:0 8px 18px rgba(31,41,55,.08);
+}
+
+.game-content.open{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0,1fr));
+  gap:12px;
+}
+
+.proof-btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+}
+
+.proof-logo{
+  width:22px;
+  height:22px;
+  object-fit:contain;
+}
+
+@media(max-width:640px){
+  .game-content.open{
+    grid-template-columns:1fr;
+  }
+}
 </style>
 </head>
 
@@ -563,6 +626,66 @@ h1{
 
       </div>
 
+      <div class="meta-card copa-card">
+
+  <div class="meta-head">
+    <div>
+      <h2>🏆 Copa do Mundo 2026</h2>
+      <p>Comprovantes dos desafios de placar</p>
+    </div>
+  </div>
+
+  <div class="game-list">
+
+    <!-- JOGO MAIS NOVO EM CIMA -->
+
+    <div>
+      <button class="game-toggle" onclick="toggleGame(this)">🇧🇷 Brasil x Haiti 🇭🇹</button>
+      <div class="game-content">
+        <button class="btn proof-btn" onclick="abrirComprovante('comprovantes/nao-houve-ganhador.png')"><img class="proof-logo" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"> YouTube / Ver comprovante</button>
+        <button class="btn proof-btn" onclick="abrirComprovante('comprovantes/nao-houve-ganhador.png')"><img class="proof-logo" src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png"> TikTok / Ver comprovante</button>
+        <button class="btn proof-btn" onclick="abrirComprovante('comprovantes/nao-houve-ganhador.png')"><img class="proof-logo" src="https://cdn-icons-png.flaticon.com/512/15707/15707749.png"> Instagram / Ver comprovante</button>
+        <button class="btn proof-btn" onclick="abrirComprovante('comprovantes/nao-houve-ganhador.png')"><img class="proof-logo" src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png"> Facebook / Ver comprovante</button>
+        <button class="btn proof-btn" onclick="abrirComprovante('comprovantes/nao-houve-ganhador.png')">🎥 Vídeo / Ver comprovante</button>
+      </div>
+    </div>
+
+    <div>
+      <button class="game-toggle" onclick="toggleGame(this)">🇵🇹 Portugal x Congo 🇨🇩</button>
+      <div class="game-content">
+        <button class="btn proof-btn" onclick="abrirComprovante('comprovantes/nao-houve-ganhador.png')"><img class="proof-logo" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"> YouTube / Ver comprovante</button>
+        <button class="btn proof-btn" onclick="abrirComprovante('comprovantes/nao-houve-ganhador.png')"><img class="proof-logo" src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png"> TikTok / Ver comprovante</button>
+        <button class="btn proof-btn" onclick="abrirComprovante('comprovantes/nao-houve-ganhador.png')"><img class="proof-logo" src="https://cdn-icons-png.flaticon.com/512/15707/15707749.png"> Instagram / Ver comprovante</button>
+        <button class="btn proof-btn" onclick="abrirComprovante('comprovantes/nao-houve-ganhador.png')"><img class="proof-logo" src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png"> Facebook / Ver comprovante</button>
+        <button class="btn proof-btn" onclick="abrirComprovante('comprovantes/nao-houve-ganhador.png')">🎥 Vídeo / Ver comprovante</button>
+      </div>
+    </div>
+
+    <div>
+      <button class="game-toggle" onclick="toggleGame(this)">🇧🇷 Brasil x Marrocos 🇲🇦</button>
+      <div class="game-content">
+        <button class="btn proof-btn" onclick="abrirComprovante('comprovantes/nao-houve-ganhador.png')"><img class="proof-logo" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"> YouTube / Ver comprovante</button>
+        <button class="btn proof-btn" onclick="abrirComprovante('comprovantes/nao-houve-ganhador.png')"><img class="proof-logo" src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png"> TikTok / Ver comprovante</button>
+        <button class="btn proof-btn" onclick="abrirComprovante('comprovantes/nao-houve-ganhador.png')"><img class="proof-logo" src="https://cdn-icons-png.flaticon.com/512/15707/15707749.png"> Instagram / Ver comprovante</button>
+        <button class="btn proof-btn" onclick="abrirComprovante('comprovantes/nao-houve-ganhador.png')"><img class="proof-logo" src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png"> Facebook / Ver comprovante</button>
+        <button class="btn proof-btn" onclick="abrirComprovante('comprovantes/nao-houve-ganhador.png')">🎥 Vídeo / Ver comprovante</button>
+      </div>
+    </div>
+
+    <div>
+      <button class="game-toggle" onclick="toggleGame(this)">🇲🇽 México x África do Sul 🇿🇦</button>
+      <div class="game-content">
+        <button class="btn proof-btn" onclick="abrirComprovante('comprovantes/nao-houve-ganhador.png')"><img class="proof-logo" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"> YouTube / Ver comprovante</button>
+        <button class="btn proof-btn" onclick="abrirComprovante('comprovantes/nao-houve-ganhador.png')"><img class="proof-logo" src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png"> TikTok / Ver comprovante</button>
+        <button class="btn proof-btn" onclick="abrirComprovante('comprovantes/nao-houve-ganhador.png')"><img class="proof-logo" src="https://cdn-icons-png.flaticon.com/512/15707/15707749.png"> Instagram / Ver comprovante</button>
+        <button class="btn proof-btn" onclick="abrirComprovante('comprovantes/nao-houve-ganhador.png')"><img class="proof-logo" src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png"> Facebook / Ver comprovante</button>
+        <button class="btn proof-btn" onclick="abrirComprovante('comprovantes/nao-houve-ganhador.png')">🎥 Vídeo / Ver comprovante</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>
     </section>
 
 
@@ -624,6 +747,10 @@ window.onclick = function(event){
     if(event.target === modal){
         fecharComprovante();
     }
+}
+  function toggleGame(botao){
+    const content = botao.nextElementSibling;
+    content.classList.toggle("open");
 }
 </script>
 </body>
