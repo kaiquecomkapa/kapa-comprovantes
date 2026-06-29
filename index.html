@@ -555,9 +555,12 @@ h1{
     justify-content:center;
     gap:8px;
 
-    width:340px;
-    max-width:100%;
+    width:100%;
+    max-width:340px;
     margin:0 auto;
+
+    white-space:normal;
+    text-align:center;
 }
 
 .proof-logo{
@@ -579,6 +582,44 @@ h1{
     margin:0 6px;
     border-radius:0;
     box-shadow:none;
+}
+  @media (max-width:640px){
+  .wrap{
+    width:min(100%, 430px);
+    padding:18px 10px 50px;
+    overflow:visible;
+  }
+
+  .month-box{
+    padding:16px;
+  }
+
+  .meta-card{
+    padding:16px;
+    overflow:visible;
+  }
+
+  .copa-card .game-toggle{
+    font-size:18px;
+    padding:16px 10px;
+  }
+
+  .copa-card .game-content{
+    padding:12px;
+    overflow:visible;
+  }
+
+  .copa-card .proof-btn{
+    width:100%;
+    max-width:280px;
+    font-size:14px;
+    padding:12px 10px;
+  }
+
+  .proof-logo{
+    width:20px;
+    height:20px;
+  }
 }
 </style>
   <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
